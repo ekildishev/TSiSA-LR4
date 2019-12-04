@@ -1,0 +1,44 @@
+﻿  Source.cpp
+c:\my projects\tsisa\lr4\lr4\source.cpp(85): warning C4244: =: преобразование "_Ty" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=int
+          ]
+c:\my projects\tsisa\lr4\lr4\source.cpp(89): warning C4244: =: преобразование "_Ty" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=int
+          ]
+c:\my projects\tsisa\lr4\lr4\source.cpp(219): warning C4244: =: преобразование "_Ty" в "_Ty1", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty1=int
+          ]
+c:\my projects\tsisa\lr4\lr4\source.cpp(220): warning C4244: =: преобразование "_Ty" в "_Ty2", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty2=int
+          ]
+c:\my projects\tsisa\lr4\lr4\source.cpp(245): warning C4018: <: несоответствие типов со знаком и без знака
+c:\my projects\tsisa\lr4\lr4\source.cpp(277): warning C4244: +=: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+  LR4.vcxproj -> C:\My Projects\TSiSA\LR4\Debug\LR4.exe
