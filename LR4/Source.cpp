@@ -4,7 +4,7 @@
 #include <cmath>
 #include <iomanip>
 
-std::vector<double> matrixAndVectorMultiplication(std::vector<std::vector<double>> table, std::vector<double> rating) // Умножение матрицы на вектор
+std::vector<double> matrixAndVectorMultiplication(std::vector<std::vector<double>> table, std::vector<double> rating) // РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° РІРµРєС‚РѕСЂ
 {
 	std::vector<double> result;
 	result.resize(4);
@@ -21,7 +21,7 @@ std::vector<double> matrixAndVectorMultiplication(std::vector<std::vector<double
 	return result;
 }
 
-double accordance(std::vector<std::vector<double>> table) // Подсчет отношения согласованности
+double accordance(std::vector<std::vector<double>> table) // РџРѕРґСЃС‡РµС‚ РѕС‚РЅРѕС€РµРЅРёСЏ СЃРѕРіР»Р°СЃРѕРІР°РЅРЅРѕСЃС‚Рё
 {
 	std::vector<double> lineMultiplication;
 	lineMultiplication.resize(4);
@@ -59,8 +59,8 @@ double accordance(std::vector<std::vector<double>> table) // Подсчет отношения с
 	return lambda;
 }
 
-void criterionChange(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // Метод замены критериев
-{
+void criterionChange(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // РњРµС‚РѕРґ Р·Р°РјРµРЅС‹ РєСЂРёС‚РµСЂРёРµРІ
+{	
 	std::vector<std::string> criterion;
 	criterion.resize(4);
 	criterion[0] = "Start price";
@@ -207,7 +207,7 @@ void criterionChange(std::vector<std::vector<double>> table, std::vector<std::pa
 	std::cout << "The best device is " << device[max.first].first << "(" << device[max.first].second << ")\n";
 }
 
-void Paretto(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // Формирование и сужение множества паретто
+void Paretto(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // Р¤РѕСЂРјРёСЂРѕРІР°РЅРёРµ Рё СЃСѓР¶РµРЅРёРµ РјРЅРѕР¶РµСЃС‚РІР° РџР°СЂРµС‚С‚Рѕ
 {
 	std::cout << "\n\nMain criterions are Start price(1) and Memory(3)\n";
 	std::vector<std::pair<int, int>> criterionTable;
@@ -248,7 +248,7 @@ void Paretto(std::vector<std::vector<double>> table, std::vector<std::pair<std::
 	}
 }
 
-void weightAndUnion(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // Взвешивание и объединение критериев
+void weightAndUnion(std::vector<std::vector<double>> table, std::vector<std::pair<std::string, char>> device) // Р’Р·РІРµС€РёРІР°РЅРёРµ Рё РѕР±СЉРµРґРёРЅРµРЅРёРµ РєСЂРёС‚РµСЂРёРµРІ
 {
 	std::cout << "Table\n\t|";
 	for (int i = 0; i < 4; i++)
@@ -344,7 +344,7 @@ void weightAndUnion(std::vector<std::vector<double>> table, std::vector<std::pai
 	std::cout << "The best device is " << device[maximumIndex].first << "(" << device[maximumIndex].second << ")\n";
 }
 
-void rankingAnalysis(std::vector<std::pair<std::string, char>> device) // Метод анализа иерархий
+void rankingAnalysis(std::vector<std::pair<std::string, char>> device) // РњРµС‚РѕРґ Р°РЅР°Р»РёР·Р° РёРµСЂР°СЂС…РёР№
 {
 	std::vector<std::vector<double>> price;
 	std::vector<std::vector<double>> repair;
